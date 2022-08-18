@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="input-block">
+            <div class="input-data">
+              <input type="text" id="input" placeholder="Search some todo..." />
+              <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+        </div>
+        <div class="main-block">
+            <h2>Todos</h2>
+            <form autocomplete="off">
+                <div class="input-data-todos">
+                    <input type="text" id="todos" placeholder="Add a todo">
+                    <button type="submit">Add</button>
+                </div>
+                <div class="todo-active">
+                    <a href="#" class="todo-active-link">All</a>
+                    <a href="#" class="todo-active-link">Active</a>
+                    <a href="#" class="todo-active-link">Completed</a>
+                    <a href="#" class="todo-active-link todo-active-link-active">Sort by</a>
+                </div>
+                <ul class="list-todo">
+
+                </ul>
+            </form>
+        </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

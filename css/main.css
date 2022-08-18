@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0d2960;
+}
+.wrapper {
+  max-width: 868px;
+  margin: 50px auto;
+  padding: 15px;
+  background: #fcfcfc;
+  border-radius: 4px;
+}
+.wrapper .input-block {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  justify-content: center;
+  border-bottom: 1px solid #edebe9;
+}
+.wrapper .input-block .input-data {
+  position: relative;
+  width: 300px;
+  display: flex;
+  gap: 5px;
+}
+.wrapper .input-block .input-data input {
+  width: 80%;
+  padding-top: 8px;
+  border-radius: 10px;
+  border: 1px solid #3498db;
+  padding-bottom: 8px;
+  outline: none;
+  padding-inline-start: 40px;
+}
+.wrapper .input-block .input-data input:focus {
+  outline: 2px dotted blue;
+}
+.wrapper .input-block .input-data .search {
+  width: 30px;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  border-radius: 5px;
+  border: 1px solid #3498db;
+  outline: none;
+  padding: 6px 20px;
+  background: #f2f2f2;
+  border-radius: 2px;
+}
+.main-block {
+  max-width: 608px;
+  margin: 24px auto;
+}
+.input-data-todos {
+  max-width: 371px;
+  display: flex;
+  gap: 3px;
+}
+.input-data-todos input {
+  width: 300px;
+  border-radius: 2px;
+  padding: 6px 20px;
+  outline: none;
+  border: 1px solid #3498db;
+}
+.input-data-todos input:focus {
+  outline: 1px dashed #34495e;
+}
+.todo-active {
+  width: 100%;
+}
+.todo-active-link {
+  font-style: normal;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #201f1e;
+  margin-right: 56px;
+  text-decoration: none;
+}
+.todo-active-link::after {
+  content: "";
+  transition: width 0.3s linear;
+  width: 0%;
+  display: inline-block;
+  height: 2px;
+  background-color: #0d2960;
+}
+.todo-active {
+  margin-top: 15px;
+}
+.todo-active-link-active::before {
+  content: url(../Group.svg);
+  padding-right: 3px;
+  vertical-align: middle;
+}
+.list-todo {
+  max-width: 608px;
+  margin-top: 15px;
+  border: 1px solid #dddddd;
+}
+.list-todo-item {
+  list-style: none;
+  padding: 16px 0px 20px 20px;
+  border-bottom: 1px solid #edebe9;
+}
+.list-todo-item-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 146%;
+  color: #201f1e;
+}
+.todo-list-item-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 165%;
+  color: #605e5c;
+}
+.input-checkbox {
+  margin-bottom: 5px;
+}
